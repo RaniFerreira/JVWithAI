@@ -4,6 +4,9 @@ Jogo da Velha (Tic-Tac-Toe) para Android, feito com **Kotlin** e **Jetpack Compo
 
 ## Funcionalidades
 
+- **Visual moderno em tons de roxo**: fundo em gradiente, cartões translúcidos, seletores em formato de pílula e peças X/O desenhadas com `Canvas` e animadas.
+- **Fogos de artifício** a cada vitória do jogador, feitos com um sistema de partículas em `Canvas` ([`Fireworks.kt`](app/src/main/java/com/example/jvwithia/ui/Fireworks.kt)). Contra a IA, eles aparecem só quando você vence. No modo de dois jogadores, aparecem para qualquer vencedor.
+- **A IA ri de você**: quando a IA vence, um 🤣 grande surge no centro da tela chacoalhando de rir, e vários 😂 sobem pela tela ([`LaughingEmoji.kt`](app/src/main/java/com/example/jvwithia/ui/LaughingEmoji.kt)).
 - **Tabuleiro 3x3** feito com composables (`Row`/`Column` de `Cell`s clicáveis).
 - **Painel de status** que mostra de quem é a vez, avisa quando a IA está pensando (com indicador de progresso) e mostra o resultado (vitória/empate).
 - **Validação completa**: vitória em linhas, colunas e diagonais e empate ("deu velha") são verificados após cada jogada. A linha vencedora fica destacada.

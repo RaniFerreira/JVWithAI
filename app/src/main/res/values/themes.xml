@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.JVWithIA" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.JVWithIA" parent="android:Theme.Material.NoActionBar">
+        <!-- Evita o "flash" branco antes do Compose desenhar o fundo roxo -->
+        <item name="android:windowBackground">#FF1E0B3B</item>
+    </style>
 </resources>
